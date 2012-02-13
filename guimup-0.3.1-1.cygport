@@ -1,0 +1,12 @@
+inherit gnome2
+
+DESCRIPTION="GTKmm client for the Music Player Daemon"
+HOMEPAGE="http://www.coonsden.com/"
+SRC_URI="mirror://sourceforge/musicpd/${PN}_${PV}_src.tar.gz"
+SRC_DIR="${PN}_${PV}_src/${PN}"
+
+src_install() {
+	cd ${B}
+	cyginstall
+	make_desktop_entry ${PN} Guimup "" "AudioVideo;Audio;Player;GTK"
+}
