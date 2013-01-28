@@ -1,6 +1,0 @@
-category: Audio Gnome
-requires: libatkmm1.6_1 libcairomm1.0_1 libgcc1 libglib2.0_0 libglibmm2.4_1 libgtk3_0 libgtkmm3.0_1 libmpdclient2 libpangomm1.4_1 libsigc2.0_0 libsoup2.4_1 libstdc++6 libunique3.0_0
-sdesc: "GTKmm client for the Media Player Daemon"
-ldesc: "GUIMUP is a client for the music player daemon (MPD) written in 
-C++ and GTKmm. The program can be used with most Linux desktops but, as 
-a GTK program, is best suited for GNOME and XFCE."

@@ -1,0 +1,18 @@
+inherit gnome2
+
+NAME="guimup"
+VERSION=0.3.3
+RELEASE=1
+CATEGORY="Audio"
+SUMMARY="GTKmm client for the Media Player Daemon"
+DESCRIPTION="GUIMUP is a client for the music player daemon (MPD) written in
+C++ and GTKmm. The program can be used with most Linux desktops but, as a GTK
+program, is best suited for GNOME and XFCE."
+HOMEPAGE="http://www.coonsden.com/"
+SRC_URI="mirror://sourceforge/musicpd/${PN}-${PV}_src.tar.gz"
+
+src_install() {
+	cd ${B}
+	cyginstall
+	make_desktop_entry ${PN} Guimup "" "AudioVideo;Audio;Player;GTK"
+}
