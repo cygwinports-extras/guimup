@@ -13,6 +13,6 @@ SRC_URI="http://www.musicpd.org/download/Guimup/${VERSION}/guimup-${VERSION}_src
 
 src_install() {
 	cd ${B}
-	cyginstall
+	cyginstall guimupdoc_DATA=
 	make_desktop_entry ${PN} Guimup "" "AudioVideo;Audio;Player;GTK"
 }
